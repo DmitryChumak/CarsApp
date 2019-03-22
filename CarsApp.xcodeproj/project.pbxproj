@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		0AE942E62245456F00F01697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942E52245456F00F01697 /* AppDelegate.swift */; };
-		0AE942E82245456F00F01697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942E72245456F00F01697 /* ViewController.swift */; };
+		0AE942E82245456F00F01697 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942E72245456F00F01697 /* MainViewController.swift */; };
 		0AE942EB2245456F00F01697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE942E92245456F00F01697 /* Main.storyboard */; };
 		0AE942ED2245457000F01697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE942EC2245457000F01697 /* Assets.xcassets */; };
 		0AE942F02245457000F01697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE942EE2245457000F01697 /* LaunchScreen.storyboard */; };
+		0AE942FF2245535100F01697 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942FE2245535100F01697 /* Car.swift */; };
+		0AE943012245550000F01697 /* CarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE943002245550000F01697 /* CarRepository.swift */; };
+		0AE9430622455CA400F01697 /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9430422455CA400F01697 /* CarCollectionViewCell.swift */; };
+		0AE9430722455CA400F01697 /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE9430522455CA400F01697 /* CarCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AE942E22245456F00F01697 /* CarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE942E52245456F00F01697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AE942E72245456F00F01697 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AE942E72245456F00F01697 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0AE942EA2245456F00F01697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AE942EC2245457000F01697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AE942EF2245457000F01697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AE942F12245457000F01697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE942FE2245535100F01697 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		0AE943002245550000F01697 /* CarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepository.swift; sourceTree = "<group>"; };
+		0AE9430422455CA400F01697 /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
+		0AE9430522455CA400F01697 /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +46,7 @@
 		0AE942D92245456F00F01697 = {
 			isa = PBXGroup;
 			children = (
-				0AE942E42245456F00F01697 /* CarsApp */,
+				0AE942E42245456F00F01697 /* Source */,
 				0AE942E32245456F00F01697 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,17 +59,85 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AE942E42245456F00F01697 /* CarsApp */ = {
+		0AE942E42245456F00F01697 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0AE942FD2245531B00F01697 /* Models */,
+				0AE942FC224547D600F01697 /* Storyboards */,
+				0AE942FB224547CC00F01697 /* Resources */,
+				0AE942FA224547A800F01697 /* ApplicationDelegate */,
+				0AE942F92245474B00F01697 /* SupportingFiles */,
+				0AE942F72245471B00F01697 /* ViewControllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0AE942F72245471B00F01697 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AE9430222455C2100F01697 /* MainViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0AE942F92245474B00F01697 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0AE942F12245457000F01697 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0AE942FA224547A800F01697 /* ApplicationDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				0AE942E52245456F00F01697 /* AppDelegate.swift */,
-				0AE942E72245456F00F01697 /* ViewController.swift */,
-				0AE942E92245456F00F01697 /* Main.storyboard */,
-				0AE942EC2245457000F01697 /* Assets.xcassets */,
-				0AE942EE2245457000F01697 /* LaunchScreen.storyboard */,
-				0AE942F12245457000F01697 /* Info.plist */,
 			);
-			path = CarsApp;
+			path = ApplicationDelegate;
+			sourceTree = "<group>";
+		};
+		0AE942FB224547CC00F01697 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AE942EC2245457000F01697 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0AE942FC224547D600F01697 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0AE942EE2245457000F01697 /* LaunchScreen.storyboard */,
+				0AE942E92245456F00F01697 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0AE942FD2245531B00F01697 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AE942FE2245535100F01697 /* Car.swift */,
+				0AE943002245550000F01697 /* CarRepository.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0AE9430222455C2100F01697 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0AE9430322455C3C00F01697 /* CollectionViewCells */,
+				0AE942E72245456F00F01697 /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		0AE9430322455C3C00F01697 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0AE9430422455CA400F01697 /* CarCollectionViewCell.swift */,
+				0AE9430522455CA400F01697 /* CarCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +201,7 @@
 				0AE942F02245457000F01697 /* LaunchScreen.storyboard in Resources */,
 				0AE942ED2245457000F01697 /* Assets.xcassets in Resources */,
 				0AE942EB2245456F00F01697 /* Main.storyboard in Resources */,
+				0AE9430722455CA400F01697 /* CarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AE942E82245456F00F01697 /* ViewController.swift in Sources */,
+				0AE943012245550000F01697 /* CarRepository.swift in Sources */,
+				0AE9430622455CA400F01697 /* CarCollectionViewCell.swift in Sources */,
+				0AE942E82245456F00F01697 /* MainViewController.swift in Sources */,
 				0AE942E62245456F00F01697 /* AppDelegate.swift in Sources */,
+				0AE942FF2245535100F01697 /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CarsApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CarsApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
