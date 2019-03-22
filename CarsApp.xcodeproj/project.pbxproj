@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7B661622457DA900029AD1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B661522457DA900029AD1 /* DetailViewController.swift */; };
 		0AE942E62245456F00F01697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942E52245456F00F01697 /* AppDelegate.swift */; };
 		0AE942E82245456F00F01697 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942E72245456F00F01697 /* MainViewController.swift */; };
 		0AE942EB2245456F00F01697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE942E92245456F00F01697 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A7B661522457DA900029AD1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0AE942E22245456F00F01697 /* CarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE942E52245456F00F01697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AE942E72245456F00F01697 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A7B661722457DAF00029AD1 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A7B661522457DA900029AD1 /* DetailViewController.swift */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
 		0AE942D92245456F00F01697 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		0AE942F72245471B00F01697 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A7B661722457DAF00029AD1 /* DetailViewController */,
 				0AE9430222455C2100F01697 /* MainViewController */,
 			);
 			path = ViewControllers;
@@ -215,6 +226,7 @@
 				0AE943012245550000F01697 /* CarRepository.swift in Sources */,
 				0AE9430622455CA400F01697 /* CarCollectionViewCell.swift in Sources */,
 				0AE942E82245456F00F01697 /* MainViewController.swift in Sources */,
+				0A7B661622457DA900029AD1 /* DetailViewController.swift in Sources */,
 				0AE942E62245456F00F01697 /* AppDelegate.swift in Sources */,
 				0AE942FF2245535100F01697 /* Car.swift in Sources */,
 			);

@@ -12,7 +12,9 @@ import Foundation
 class CarRepository {
     var cars = [Car]()
     init() {
-        cars.append(Car("Honda",2008,"Black","honda"))
+        let honda = Car("Honda",2008,"Black","honda")
+        honda.history = "History of Honda"
+        cars.append(honda)
         cars.append(Car("Ferrari",2015,"Red","ferrari"))
         cars.append(Car("Lexus",2000,"White","lexus"))
         cars.append(Car("BMW",2010,"Green","bmw"))

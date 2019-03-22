@@ -27,6 +27,19 @@ class MainViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CarDetailSegue" {
+            if let destinationVC = segue.destination as? DetailViewController {
+                if let cell = sender as? CarCollectionViewCell {
+                    if let indexPath = carsCollectionView.indexPath(for: cell) {
+                        //configure...
+                        destinationVC.config(for: carsRepository.cars[indexPath.row])
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 
@@ -49,12 +62,18 @@ extension MainViewController: UICollectionViewDataSource {
     }
 
 
+    
+    
 }
 
 //carsCollectionViewDelegate
 
 extension MainViewController: UICollectionViewDelegate {
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "CarDetailSegue", sender: collectionView.cellForItem(at: indexPath))
+    }
+    
 }
 
 
