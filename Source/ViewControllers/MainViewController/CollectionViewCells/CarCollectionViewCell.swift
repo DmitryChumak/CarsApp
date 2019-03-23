@@ -10,14 +10,22 @@ import UIKit
 
 class CarCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet var image: UIImageView!
-    @IBOutlet var productionYear: UILabel!
-    @IBOutlet var model: UILabel!
-    @IBOutlet var color: UILabel!
+    @IBOutlet private var image: UIImageView!
+    @IBOutlet private var productionYear: UILabel!
+    @IBOutlet private var model: UILabel!
+    @IBOutlet private var color: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func configure(with car: Car) {
+        color?.text = car.color
+        image?.image  = UIImage(named: car.image)
+        model.text = car.model
+        productionYear.text = String(car.productionYear)
     }
+}
 
+
+extension CarCollectionViewCell {
+    static var reuseIdentifier: String {
+        return String(describing: self)
+    }
 }

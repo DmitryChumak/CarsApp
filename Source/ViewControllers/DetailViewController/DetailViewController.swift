@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
     }
     
 
-    func config(for car: Car) {
+    func configure(for car: Car) {
         self.car = car
     }
     /*

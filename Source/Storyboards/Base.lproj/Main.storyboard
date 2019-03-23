@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="933.60000000000002" y="790.25487256371821"/>
         </scene>
-        <!--CarDetailViewController-->
+        <!--DetailViewController-->
         <scene sceneID="Dt5-Ze-njR">
             <objects>
-                <viewController title="CarDetailViewController" id="vtj-1J-dHz" customClass="DetailViewController" customModule="CarsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" title="DetailViewController" id="vtj-1J-dHz" customClass="DetailViewController" customModule="CarsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKB-EX-aS6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

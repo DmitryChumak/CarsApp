@@ -9,19 +9,10 @@
 import Foundation
 
 
-class Car {
+struct Car {
     var model: String
     var productionYear: Int
     var color: String
-    var image: String?
+    var image: String
     var history: String
-    
-    init(_ model: String, _ productionYear: Int, _ color: String, _ image: String?) {
-        self.model = model
-        self.productionYear = productionYear
-        self.color = color
-        self.image = image
-        self.history = "No history"
-    }
-    
 }
