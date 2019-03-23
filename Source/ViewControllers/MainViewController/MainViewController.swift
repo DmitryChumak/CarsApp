@@ -17,20 +17,24 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //initialize carsCollectionView
-        
         carsCollectionView.delegate = self
         carsCollectionView.dataSource = self
         
         let nib = UINib.init(nibName: CarCollectionViewCell.reuseIdentifier, bundle: nil)
         self.carsCollectionView.register(nib, forCellWithReuseIdentifier: CarCollectionViewCell.reuseIdentifier)
         
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addCar))
+        
+    }
+    
+    @objc func addCar() {
+    
     }
     
 }
 
 
-// carsCollectionViewDataSource
+// MARK: - UICollectionView DataSource
 
 extension MainViewController: UICollectionViewDataSource {
     
@@ -49,13 +53,14 @@ extension MainViewController: UICollectionViewDataSource {
 
 }
 
-//carsCollectionViewDelegate
+
+// MARK: - UICollectionView Delegate
 
 extension MainViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        let detailVC = storyboard?.instantiateViewController(withIdentifier: DetailViewController.storyboardID) as! DetailViewController
         let car = carsRepository.cars[indexPath.row]
         detailVC.configure(for: car)
         

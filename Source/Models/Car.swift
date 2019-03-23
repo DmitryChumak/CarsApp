@@ -10,9 +10,9 @@ import Foundation
 
 
 struct Car {
-    var model: String
-    var productionYear: Int
-    var color: String
-    var image: String
-    var history: String
+    let model: String
+    let productionYear: Int
+    let color: String
+    let image: String
+    let history: String
 }

@@ -55,10 +55,10 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="157" height="116"/>
             <connections>
-                <outlet property="color" destination="597-xe-eTZ" id="HMI-sH-RSl"/>
-                <outlet property="image" destination="ZfL-Av-bHF" id="ir3-HU-8PY"/>
-                <outlet property="model" destination="Agn-pw-hh7" id="q3d-kl-gX5"/>
-                <outlet property="productionYear" destination="nxf-0t-4cY" id="FHa-Nk-4wY"/>
+                <outlet property="colorLabel" destination="597-xe-eTZ" id="xmQ-tq-pdU"/>
+                <outlet property="imageImageView" destination="ZfL-Av-bHF" id="Dm4-7Q-mHg"/>
+                <outlet property="modelLabel" destination="Agn-pw-hh7" id="YOd-gu-ljG"/>
+                <outlet property="productionYearLabel" destination="nxf-0t-4cY" id="aHL-iP-2cD"/>
             </connections>
             <point key="canvasLocation" x="222.40000000000001" y="182.60869565217394"/>
         </collectionViewCell>

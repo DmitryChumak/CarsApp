@@ -10,22 +10,18 @@ import UIKit
 
 class CarCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet private var image: UIImageView!
-    @IBOutlet private var productionYear: UILabel!
-    @IBOutlet private var model: UILabel!
-    @IBOutlet private var color: UILabel!
+    @IBOutlet private var imageImageView: UIImageView!
+    @IBOutlet private var productionYearLabel: UILabel!
+    @IBOutlet private var modelLabel: UILabel!
+    @IBOutlet private var colorLabel: UILabel!
     
     func configure(with car: Car) {
-        color?.text = car.color
-        image?.image  = UIImage(named: car.image)
-        model.text = car.model
-        productionYear.text = String(car.productionYear)
+        colorLabel?.text = car.color
+        imageImageView?.image  = UIImage(named: car.image)
+        modelLabel.text = car.model
+        productionYearLabel.text = String(car.productionYear)
     }
 }
 
 
-extension CarCollectionViewCell {
-    static var reuseIdentifier: String {
-        return String(describing: self)
-    }
-}
+

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A7B661622457DA900029AD1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B661522457DA900029AD1 /* DetailViewController.swift */; };
+		0A7B661A2246B6CF00029AD1 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B66192246B6CF00029AD1 /* UICollectionViewCell+Extension.swift */; };
+		0A7B661C2246B8B500029AD1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B661B2246B8B500029AD1 /* UIViewController+Extension.swift */; };
 		0AE942E62245456F00F01697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942E52245456F00F01697 /* AppDelegate.swift */; };
 		0AE942E82245456F00F01697 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942E72245456F00F01697 /* MainViewController.swift */; };
 		0AE942EB2245456F00F01697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE942E92245456F00F01697 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		0A7B661522457DA900029AD1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0A7B66192246B6CF00029AD1 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
+		0A7B661B2246B8B500029AD1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		0AE942E22245456F00F01697 /* CarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE942E52245456F00F01697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AE942E72245456F00F01697 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 			path = DetailViewController;
 			sourceTree = "<group>";
 		};
+		0A7B66182246B6AA00029AD1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A7B66192246B6CF00029AD1 /* UICollectionViewCell+Extension.swift */,
+				0A7B661B2246B8B500029AD1 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0AE942D92245456F00F01697 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,7 @@
 		0AE942E42245456F00F01697 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				0A7B66182246B6AA00029AD1 /* Extensions */,
 				0AE942FD2245531B00F01697 /* Models */,
 				0AE942FC224547D600F01697 /* Storyboards */,
 				0AE942FB224547CC00F01697 /* Resources */,
@@ -223,7 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7B661C2246B8B500029AD1 /* UIViewController+Extension.swift in Sources */,
 				0AE943012245550000F01697 /* CarRepository.swift in Sources */,
+				0A7B661A2246B6CF00029AD1 /* UICollectionViewCell+Extension.swift in Sources */,
 				0AE9430622455CA400F01697 /* CarCollectionViewCell.swift in Sources */,
 				0AE942E82245456F00F01697 /* MainViewController.swift in Sources */,
 				0A7B661622457DA900029AD1 /* DetailViewController.swift in Sources */,
