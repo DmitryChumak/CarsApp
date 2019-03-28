@@ -10,6 +10,8 @@
 		0A7B661622457DA900029AD1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B661522457DA900029AD1 /* DetailViewController.swift */; };
 		0A7B661A2246B6CF00029AD1 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B66192246B6CF00029AD1 /* UICollectionViewCell+Extension.swift */; };
 		0A7B661C2246B8B500029AD1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B661B2246B8B500029AD1 /* UIViewController+Extension.swift */; };
+		0A7B661E2246CEE200029AD1 /* AddCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7B661D2246CEE200029AD1 /* AddCar.storyboard */; };
+		0A7B66222246D09600029AD1 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B66212246D09600029AD1 /* AddCarViewController.swift */; };
 		0AE942E62245456F00F01697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942E52245456F00F01697 /* AppDelegate.swift */; };
 		0AE942E82245456F00F01697 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE942E72245456F00F01697 /* MainViewController.swift */; };
 		0AE942EB2245456F00F01697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE942E92245456F00F01697 /* Main.storyboard */; };
@@ -19,12 +21,16 @@
 		0AE943012245550000F01697 /* CarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE943002245550000F01697 /* CarRepository.swift */; };
 		0AE9430622455CA400F01697 /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9430422455CA400F01697 /* CarCollectionViewCell.swift */; };
 		0AE9430722455CA400F01697 /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE9430522455CA400F01697 /* CarCollectionViewCell.xib */; };
+		0AEEB695224AB55400046898 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEEB694224AB55400046898 /* MainViewModel.swift */; };
+		89EC5769459512F4DF8E53C2 /* Pods_CarsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC82BEF70795419FF4147B69 /* Pods_CarsApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A7B661522457DA900029AD1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0A7B66192246B6CF00029AD1 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 		0A7B661B2246B8B500029AD1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		0A7B661D2246CEE200029AD1 /* AddCar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCar.storyboard; sourceTree = "<group>"; };
+		0A7B66212246D09600029AD1 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
 		0AE942E22245456F00F01697 /* CarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE942E52245456F00F01697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AE942E72245456F00F01697 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,10 @@
 		0AE943002245550000F01697 /* CarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepository.swift; sourceTree = "<group>"; };
 		0AE9430422455CA400F01697 /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AE9430522455CA400F01697 /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
+		0AEEB694224AB55400046898 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2376380914AB8A2D86483127 /* Pods-CarsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarsApp.release.xcconfig"; path = "Target Support Files/Pods-CarsApp/Pods-CarsApp.release.xcconfig"; sourceTree = "<group>"; };
+		49B431FE32FB0CC60F400A37 /* Pods-CarsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarsApp.debug.xcconfig"; path = "Target Support Files/Pods-CarsApp/Pods-CarsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EC82BEF70795419FF4147B69 /* Pods_CarsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EC5769459512F4DF8E53C2 /* Pods_CarsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,11 +77,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0A7B661F2246D06300029AD1 /* AddCarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A7B661D2246CEE200029AD1 /* AddCar.storyboard */,
+				0A7B66212246D09600029AD1 /* AddCarViewController.swift */,
+			);
+			path = AddCarViewController;
+			sourceTree = "<group>";
+		};
 		0AE942D92245456F00F01697 = {
 			isa = PBXGroup;
 			children = (
 				0AE942E42245456F00F01697 /* Source */,
 				0AE942E32245456F00F01697 /* Products */,
+				9F02BE0812D343709AA61B51 /* Pods */,
+				A2899159CDEE434A1523C5F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +121,7 @@
 		0AE942F72245471B00F01697 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A7B661F2246D06300029AD1 /* AddCarViewController */,
 				0A7B661722457DAF00029AD1 /* DetailViewController */,
 				0AE9430222455C2100F01697 /* MainViewController */,
 			);
@@ -150,6 +173,7 @@
 		0AE9430222455C2100F01697 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0AEEB694224AB55400046898 /* MainViewModel.swift */,
 				0AE9430322455C3C00F01697 /* CollectionViewCells */,
 				0AE942E72245456F00F01697 /* MainViewController.swift */,
 			);
@@ -165,6 +189,23 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
+		9F02BE0812D343709AA61B51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49B431FE32FB0CC60F400A37 /* Pods-CarsApp.debug.xcconfig */,
+				2376380914AB8A2D86483127 /* Pods-CarsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2899159CDEE434A1523C5F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC82BEF70795419FF4147B69 /* Pods_CarsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AE942F42245457000F01697 /* Build configuration list for PBXNativeTarget "CarsApp" */;
 			buildPhases = (
+				704AA993CE83273ECEA03B89 /* [CP] Check Pods Manifest.lock */,
 				0AE942DE2245456F00F01697 /* Sources */,
 				0AE942DF2245456F00F01697 /* Frameworks */,
 				0AE942E02245456F00F01697 /* Resources */,
+				05543B3AF42E85F7DC2B0ECA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,10 +270,62 @@
 				0AE942ED2245457000F01697 /* Assets.xcassets in Resources */,
 				0AE942EB2245456F00F01697 /* Main.storyboard in Resources */,
 				0AE9430722455CA400F01697 /* CarCollectionViewCell.xib in Resources */,
+				0A7B661E2246CEE200029AD1 /* AddCar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05543B3AF42E85F7DC2B0ECA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarsApp/Pods-CarsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarsApp/Pods-CarsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		704AA993CE83273ECEA03B89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AE942DE2245456F00F01697 /* Sources */ = {
@@ -240,7 +335,9 @@
 				0A7B661C2246B8B500029AD1 /* UIViewController+Extension.swift in Sources */,
 				0AE943012245550000F01697 /* CarRepository.swift in Sources */,
 				0A7B661A2246B6CF00029AD1 /* UICollectionViewCell+Extension.swift in Sources */,
+				0A7B66222246D09600029AD1 /* AddCarViewController.swift in Sources */,
 				0AE9430622455CA400F01697 /* CarCollectionViewCell.swift in Sources */,
+				0AEEB695224AB55400046898 /* MainViewModel.swift in Sources */,
 				0AE942E82245456F00F01697 /* MainViewController.swift in Sources */,
 				0A7B661622457DA900029AD1 /* DetailViewController.swift in Sources */,
 				0AE942E62245456F00F01697 /* AppDelegate.swift in Sources */,
@@ -388,6 +485,7 @@
 		};
 		0AE942F52245457000F01697 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49B431FE32FB0CC60F400A37 /* Pods-CarsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -405,6 +503,7 @@
 		};
 		0AE942F62245457000F01697 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2376380914AB8A2D86483127 /* Pods-CarsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
